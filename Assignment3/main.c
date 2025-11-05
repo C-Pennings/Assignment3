@@ -25,6 +25,11 @@ const char* RockPaperScissors(char p1[], char p2[]) {
 		return "Invalid";
 	}
 
+	//check if draw
+	if (strcmp(p1, p2) == 0) {
+		return "Draw";
+	}
+
 
 	return "Invalid";
 }

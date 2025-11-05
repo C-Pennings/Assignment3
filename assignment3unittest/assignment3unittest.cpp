@@ -10,7 +10,7 @@ namespace assignment3unittest
 	{
 	public:
 		
-		TEST_METHOD(RockTest)
+		TEST_METHOD(RockDrawTest)
 		{
 			char input1[] = "rock";
 			char input2[] = "rock";
@@ -18,14 +18,14 @@ namespace assignment3unittest
 			Assert::AreEqual("Draw", RockPaperScissors(input1, input2));
 
 		}
-		TEST_METHOD(PaperTest)
+		TEST_METHOD(PaperDrawTest)
 		{
 			char input1[] = "paper";
 			char input2[] = "paper";
 
 			Assert::AreEqual("Draw", RockPaperScissors(input1, input2));
 		}
-		TEST_METHOD(ScissorsTest)
+		TEST_METHOD(ScissorsDrawTest)
 		{
 			char input1[] = "scissors";
 			char input2[] = "scissors";
