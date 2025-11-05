@@ -9,7 +9,6 @@ namespace assignment3unittest
 	TEST_CLASS(assignment3unittest)
 	{
 	public:
-		
 		TEST_METHOD(RockDrawTest)
 		{
 			char input1[] = "rock";
