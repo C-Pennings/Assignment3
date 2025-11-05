@@ -32,22 +32,68 @@ namespace assignment3unittest
 
 			Assert::AreEqual("Draw", RockPaperScissors(input1, input2));
 		}
-		TEST_METHOD(IncorrectTest)
+		TEST_METHOD(P1IncorrectTest)
 		{
+			char input1[] = "gun";
+			char input2[] = "paper";
 
+			Assert::AreEqual("Invalid", RockPaperScissors(input1, input2));
 		}
-		TEST_METHOD(RockWins)
+		TEST_METHOD(P2IncorrectTest)
 		{
+			char input1[] = "rock";
+			char input2[] = "bomb";
 
+			Assert::AreEqual("Invalid", RockPaperScissors(input1, input2));
 		}
-		TEST_METHOD(PaperWins)
+		TEST_METHOD(AllIncorrectTest)
 		{
+			char input1[] = "gun";
+			char input2[] = "bomb";
 
+			Assert::AreEqual("Invalid", RockPaperScissors(input1, input2));
 		}
-		TEST_METHOD(ScissorsWins)
+		TEST_METHOD(RockWinsP1)
 		{
+			char input1[] = "rock";
+			char input2[] = "scissors";
 
+			Assert::AreEqual("Player1", RockPaperScissors(input1, input2));
 		}
-		
+		TEST_METHOD(PaperWinsP1)
+		{
+			char input1[] = "paper";
+			char input2[] = "rock";
+
+			Assert::AreEqual("Player1", RockPaperScissors(input1, input2));
+		}
+		TEST_METHOD(ScissorsWinsP1)
+		{
+			char input1[] = "scissors";
+			char input2[] = "paper";
+
+			Assert::AreEqual("Player1", RockPaperScissors(input1, input2));
+		}
+		TEST_METHOD(RockWinsP2)
+		{
+			char input1[] = "scissors";
+			char input2[] = "rock";
+
+			Assert::AreEqual("Player2", RockPaperScissors(input1, input2));
+		}
+		TEST_METHOD(PaperWinsP2)
+		{
+			char input1[] = "rock";
+			char input2[] = "paper";
+
+			Assert::AreEqual("Player2", RockPaperScissors(input1, input2));
+		}
+		TEST_METHOD(ScissorsWinsP2)
+		{
+			char input1[] = "paper";
+			char input2[] = "scissors";
+
+			Assert::AreEqual("Player2", RockPaperScissors(input1, input2));
+		}
 	};
 }
