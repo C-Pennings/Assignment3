@@ -20,11 +20,17 @@ namespace assignment3unittest
 		}
 		TEST_METHOD(PaperTest)
 		{
+			char input1[] = "paper";
+			char input2[] = "paper";
 
+			Assert::AreEqual("Draw", RockPaperScissors(input1, input2));
 		}
 		TEST_METHOD(ScissorsTest)
 		{
+			char input1[] = "scissors";
+			char input2[] = "scissors";
 
+			Assert::AreEqual("Draw", RockPaperScissors(input1, input2));
 		}
 		TEST_METHOD(IncorrectTest)
 		{
