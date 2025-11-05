@@ -26,5 +26,5 @@ const char* RockPaperScissors(char p1[], char p2[]) {
 	}
 
 
-	return "Draw";
+	return "Invalid";
 }
